@@ -1,0 +1,41 @@
+@charset "UTF-8";
+.teste h1 {/* box-level */
+    background-color: lightgray;
+    height: 300px;
+    width: 300px;
+    border: 10px solid darkslategrey;
+    padding: 10px;
+}
+p a {/* inline-level */
+    border: 10px solid red;
+    padding: 10px;
+}
+header {
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+}
+nav {
+    background-color: black;
+    text-align: center;
+    color: wheat;
+}
+main {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: dimgray;
+    padding: 10px;
+    margin: 10px;
+}
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+footer > p {
+    margin: 0;
+}
+#assuntos p {
+    background-color: aliceblue;
+}

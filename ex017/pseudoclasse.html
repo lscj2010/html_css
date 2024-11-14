@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo-classes</title>
+    <style>
+        /*
+        #  = id
+        .  = class
+        :  = pseudo-class
+        :: = pseudo-element
+        >  = clildren filho
+        */
+      .d1 {
+        display: inline-block;
+        background-color: lightgray;
+        border: 1px solid black;
+        text-align: center;
+        height: 200px;
+        width: 200px;
+        padding: 2px;
+      }
+      .d1:hover {
+        background-color: yellow;
+      }
+      div > p {
+        display: none;
+        position: relative;
+      }
+      div:hover > p {
+        display: block;
+        color: white;
+        background-color: rebeccapurple;
+      }
+      .passe:hover {
+        color: red;
+      }
+      .fim {
+        top: 380px;
+        position: absolute;
+      }
+      .links {
+        top: 410px;
+        position: absolute;
+      }
+      .links a {
+        color: rebeccapurple;
+        text-decoration: none;
+      }
+      .links a:visited, a:hover, a:active {
+        color: darkred;
+        color: black;
+        text-decoration: underline;
+        color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="d1">01</div>
+    <div class="d1">02</div>
+    <div class="d1">03</div>
+    <h1>Exemplo de hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div class="passe">
+        Passe o mouse aqui
+        <p>Texto Escondido...</p>
+    </div>
+    <p class="fim">Fim do exemplo</p>
+    <div class="links">
+        <h1>Personalizando Links</h1>
+        <ul>
+            <li><a href="https://gustavoguanabara.github.io">Repositório GitHub</a></li>
+            <li><a href="https://youtube.com/cursoemvideo">Canal do YouTube</a></li>
+            <li><a href="https://www.cursoemvideo.com">Site do Cursoemvideo</a></li>
+        </ul>
+    </div>
+  </body>
+</html>
